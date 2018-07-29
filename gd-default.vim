@@ -2,18 +2,18 @@
 " Maintainer:	Garrett Doorenbos <gdoorenbos91@gmail.com>
 " Last Change:	2018 Jul 29
 
-set background=dark
+set background=light
 hi clear
 if exists("syntax_on")
   syntax reset
 endif
 let g:colors_name = "gd-default"
-hi Normal     term=NONE cterm=NONE ctermfg=NONE ctermbg=NONE gui=NONE guifg=NONE guibg=NONE
-hi Comment    term=bold cterm=NONE ctermfg=DarkBlue ctermbg=NONE gui=NONE guifg=Blue guibg=NONE
-hi Constant   term=underline cterm=NONE ctermfg=DarkRed ctermbg=NONE gui=NONE guifg=Magenta guibg=NONE
-hi Special    term=bold cterm=NONE ctermfg=DarkMagenta ctermbg=NONE gui=NONE guifg=SlateBlue guibg=NONE
-hi Identifier term=underline cterm=NONE ctermfg=DarkCyan ctermbg=NONE gui=NONE guifg=DarkCyan guibg=NONE
-hi Statement  term=bold cterm=NONE ctermfg=Brown ctermbg=NONE gui=bold guifg=Brown guibg=NONE
+hi Normal     term=NONE cterm=NONE ctermfg=248 ctermbg=16 gui=NONE guifg=NONE guibg=NONE
+hi Comment    term=bold cterm=NONE ctermfg=25 ctermbg=NONE gui=NONE guifg=Blue guibg=NONE
+hi Constant   term=underline cterm=NONE ctermfg=160 ctermbg=NONE gui=NONE guifg=Magenta guibg=NONE
+hi Special    term=bold cterm=NONE ctermfg=96 ctermbg=NONE gui=NONE guifg=SlateBlue guibg=NONE
+hi Identifier term=underline cterm=NONE ctermfg=37 ctermbg=NONE gui=NONE guifg=DarkCyan guibg=NONE
+hi Statement  term=bold cterm=NONE ctermfg=130 ctermbg=NONE gui=bold guifg=Brown guibg=NONE
 hi PreProc    term=underline cterm=NONE ctermfg=DarkMagenta ctermbg=NONE gui=NONE guifg=Purple guibg=NONE
 hi Type       term=underline cterm=NONE ctermfg=DarkGreen ctermbg=NONE gui=bold guifg=SeaGreen guibg=NONE
 hi Underlined term=underline cterm=underline ctermfg=DarkMagenta gui=underline guifg=SlateBlue
@@ -22,7 +22,7 @@ hi Error      term=reverse cterm=NONE ctermfg=White ctermbg=Red gui=NONE guifg=W
 hi Todo       term=standout cterm=NONE ctermfg=Black ctermbg=Yellow gui=NONE guifg=Blue guibg=Yellow
 
 " tab line
-hi TabLine     term=underline cterm=underline ctermfg=0 ctermbg=7 gui=underline guibg=LightGrey
+hi TabLine     term=underline cterm=underline ctermfg=16 ctermbg=248 gui=underline guibg=LightGrey
 hi TabLineSel  term=bold cterm=bold gui=bold
 hi TabLineFill term=reverse cterm=reverse gui=reverse
 
