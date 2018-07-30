@@ -10,22 +10,19 @@ if exists("syntax_on")
 endif
 let g:colors_name = "gd-default"
 
-" custom color defs
-hi GrayOnBlack term=NONE cterm=NONE ctermfg=247 ctermbg=16 gui=NONE guifg=#9e9e9e guibg=#000000
-
 " base defs
-" hi Normal     term=NONE cterm=NONE ctermfg=247 ctermbg=16 gui=NONE guifg=NONE guibg=NONE
-hi Comment    term=bold cterm=NONE ctermfg=25 ctermbg=NONE gui=NONE guifg=Blue guibg=NONE
-hi Constant   term=underline cterm=NONE ctermfg=160 ctermbg=NONE gui=NONE guifg=Magenta guibg=NONE
-hi Special    term=bold cterm=NONE ctermfg=96 ctermbg=NONE gui=NONE guifg=SlateBlue guibg=NONE
-hi Identifier term=underline cterm=NONE ctermfg=37 ctermbg=NONE gui=NONE guifg=DarkCyan guibg=NONE
-hi Statement  term=bold cterm=NONE ctermfg=130 ctermbg=NONE gui=bold guifg=Brown guibg=NONE
-hi PreProc    term=underline cterm=NONE ctermfg=90 ctermbg=NONE gui=NONE guifg=Purple guibg=NONE
-hi Type       term=underline cterm=NONE ctermfg=28 ctermbg=NONE gui=bold guifg=SeaGreen guibg=NONE
-hi Underlined term=underline cterm=underline ctermfg=60 gui=underline guifg=SlateBlue
-hi Ignore     term=NONE cterm=NONE ctermfg=231 ctermbg=NONE gui=NONE guifg=bg guibg=NONE
-hi Error      term=reverse cterm=NONE ctermfg=231 ctermbg=160 gui=NONE guifg=White guibg=Red
-hi Todo       term=standout cterm=NONE ctermfg=16 ctermbg=227 gui=NONE guifg=Blue guibg=Yellow
+hi Normal     term=NONE      cterm=NONE      ctermfg=247 ctermbg=16   gui=NONE      guifg=#9e9e9e guibg=#000000
+hi Comment    term=bold      cterm=NONE      ctermfg=25  ctermbg=NONE gui=NONE      guifg=#005faf guibg=NONE
+hi Constant   term=underline cterm=NONE      ctermfg=160 ctermbg=NONE gui=NONE      guifg=#d70000 guibg=NONE
+hi Special    term=bold      cterm=NONE      ctermfg=96  ctermbg=NONE gui=NONE      guifg=#875f87 guibg=NONE
+hi Identifier term=underline cterm=NONE      ctermfg=37  ctermbg=NONE gui=NONE      guifg=#00afaf guibg=NONE
+hi Statement  term=bold      cterm=NONE      ctermfg=130 ctermbg=NONE gui=bold      guifg=#af5f00 guibg=NONE
+hi PreProc    term=underline cterm=NONE      ctermfg=90  ctermbg=NONE gui=NONE      guifg=#870087 guibg=NONE
+hi Type       term=underline cterm=NONE      ctermfg=28  ctermbg=NONE gui=bold      guifg=#008700 guibg=NONE
+hi Underlined term=underline cterm=underline ctermfg=90  ctermbg=NONE gui=underline guifg=#870087 guibg=NONE
+hi Ignore     term=NONE      cterm=NONE      ctermfg=231 ctermbg=NONE gui=NONE      guifg=#ffffff guibg=NONE
+hi Error      term=reverse   cterm=NONE      ctermfg=231 ctermbg=160  gui=NONE      guifg=#ffffff guibg=#005faf
+hi Todo       term=standout  cterm=NONE      ctermfg=16  ctermbg=227  gui=NONE      guifg=#000000 guibg=#ffff5f
 
 " tabs
 hi TabLine     term=underline cterm=underline ctermfg=16 ctermbg=247 gui=underline guibg=LightGrey
@@ -33,7 +30,6 @@ hi TabLineSel  term=bold cterm=bold gui=bold
 hi TabLineFill term=reverse cterm=reverse gui=reverse
 
 " Common groups that link to default highlighting.
-hi! link Normal          GreyOnBlack
 hi! link String          Constant
 hi! link Character       Constant
 hi! link Number          Constant
